@@ -1,4 +1,5 @@
 const IpfsApi = require('ipfs-http-client')
+
 const ipfs = IpfsApi.create()
 
 // const IPFS = require('ipfs')
@@ -17,7 +18,7 @@ module.exports = () => {
       port: 3000,
       enabled: true
     },
-    // 'ipfsHttpModule': ipfsHttp,
-    ipfsModule: ipfs
+     'ipfsHttpModule': ipfs,
+    //ipfsModule: ipfs
   }
 }
